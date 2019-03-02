@@ -1,0 +1,26 @@
+.main-container {
+  background-image: url("./../../assets/brad.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 60vh;
+  .icon {
+    max-height: 20vh;
+  }
+  .lbl {
+    color: wheat;
+  }
+  input {
+    color: black;
+    font-weight: 500;
+  }
+  .filter-btn {
+    background: #c9c9d2;
+  }
+  a {
+    cursor: pointer;
+  }
+  .btn {
+    border-radius: 0%;
+  }
+}

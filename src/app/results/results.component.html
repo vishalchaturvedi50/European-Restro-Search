@@ -1,0 +1,21 @@
+<div class="d-flex row flex-wrap host-div">
+
+  <div class=" col-12 col-md-4 p-2" *ngFor="let item of resturantList;let id=index;">
+    <div class="card  m-1">
+      <img class=" img-fluid cuisine-img card-img-top" src="./../../assets/{{getImgNoFn(id)}}.jpg" alt="Card image cap">
+      <div class="card-body">
+        <div class="row ">
+          <h4 class="card-title col-12">{{item.name}} | <small>{{item.city}}</small></h4>
+        </div>
+
+        <div class="row justify-content-end align-items-center">
+          <i *ngFor="let item of computeStarFn(item.rating)" class="fa gold" [ngClass]="item" aria-hidden="true"></i> &nbsp;|&nbsp; <i
+            class="fa fa-users blue"></i> &nbsp;&nbsp;{{item.noOfReviews}}
+        </div>
+
+        <p class="card-text"><span *ngFor="let cus of item.cuisineStyle;let in=index">{{cus}} <span
+              *ngIf="(in+1)!=item.cuisineStyle.length">,</span></span>
+        </p>
+      </div>
+    </div>
+  </div>
