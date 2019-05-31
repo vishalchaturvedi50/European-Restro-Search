@@ -5,14 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { AppService } from './service/app.service';
-import { HeaderComponent } from './header/header.component';
 import { ResultsComponent } from './results/results.component';
 import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     ResultsComponent,
     SearchComponent,
   ],

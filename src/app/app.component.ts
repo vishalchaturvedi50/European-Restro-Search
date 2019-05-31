@@ -9,4 +9,8 @@ import { AppService } from './service/app.service';
 export class AppComponent {
   title = 'dell-emc-hchal';
   constructor(private appService: AppService) { }
+
+  scrollToTopFn() {
+    window.scrollTo(0, 0);
+  }
 }
